@@ -1,6 +1,6 @@
 package Interface;
 
-public class Rectangle implements shape{
+public class Rectangle extends Figure implements shape{
 
 	public Rectangle()
 	{
@@ -24,6 +24,26 @@ public class Rectangle implements shape{
 	public void printShapeDetails()
 	{
 		System.out.println("This message is from Rectangle class..");
+	}
+	
+	
+	/*
+	 * This is overridden implementation of the abstract method,area(),Volume()from figure class..
+	 */
+	@Override
+	public double area() {
+		System.out.println("Area of Rectangle is calculated here..");
+		return 0.0;
+	}
+	@Override
+	public double volume() {
+		System.out.println("Calculate the volume of Rectangle here..");
+		return 0;
+	}
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("Draw a Rectangle..");
 	}
 	
 }
